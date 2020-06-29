@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="main">
+
+    <input type="text" class="display" id="result" onfocus="this.style.backgroudColor='goldenrod'"  onblur="this.style.backgroudColor='blue'">
+
+<div class="btn1">
+   <button class="btn2">M</button>
+   <button class="btn2">%</button>
+   <button class="btn2" onclick="getanswer('/')">/</button>
+</div> 
+
+<div> 
+    <button onclick="clearAll()"  class="btn5">CE</button>
+</div>
+
+<div class="btn1" >
+    <button onclick="getanswer('7')">7</button>
+    <button onclick="getanswer('8')">8</button>
+    <button  onclick="getanswer('9')">9</button>
+    <button onclick="getanswer('*')">X</button>
+</div>
+
+
+<div  class="btn1">
+    <button onclick="getanswer('4')">4</button>
+    <button onclick="getanswer('5')">5</button>
+    <button onclick="getanswer('6')">6</button>
+    <button onclick="getanswer('-')">-</button>
+</div>
+
+
+<div  class="btn1">
+   <button onclick="getanswer('1')">1</button>
+   <button onclick="getanswer('2')">2</button>
+   <button onclick="getanswer('3')">3</button>
+   <button onclick="getanswer('+')">+</button>
+</div>
+
+
+<div class="btn1">
+    <button class="row" onclick="getanswer('0')">0</button>
+    <button class="row" onclick="getanswer('.')">.</button>
+    <button class="row" onclick="operators()">=</button>
+</div>
+
+</div>
+
+</body>
+<script src="app.js"></script>
+</html>
